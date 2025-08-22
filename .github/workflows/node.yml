@@ -26,5 +26,4 @@ jobs:
           mongodb-version: ${{ matrix.mongodb-version }}
       - run: npm install
       - run: npm run build --prefix client     
-      - run: npm test -- --testTimeout=30000 --maxWorkers=2 --watchAll=false
-        timeout-minutes: 5
+      - run: npm test
